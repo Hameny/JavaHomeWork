@@ -31,10 +31,10 @@ public class HWLesson3 {
         int secondNumber = 1;
         int fib = 0;
         if (number2 > 0 ) {
-            while((a + b) < number2) {
-                fib = a + b;
-                a = b;
-                b = fib;
+            while((firstNumber + secondNumber) < number2) {
+                fib = firstNumber + secondNumber;
+                firstNumber = secondNumber;
+                secondNumber = fib;
                 System.out.print(fib + " ");
             }
         }else
