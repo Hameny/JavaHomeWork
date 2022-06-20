@@ -27,8 +27,8 @@ public class HWLesson3 {
         Scanner scaner2 = new Scanner(System.in);
         System.out.println("Input number :");
         int number2 = scaner2.nextInt();
-        int a = 0;
-        int b = 1;
+        int firstNumber = 0;
+        int secondNumber = 1;
         int fib = 0;
         if (number2 > 0 ) {
             while((a + b) < number2) {
@@ -70,7 +70,7 @@ public class HWLesson3 {
         }
 
         System.out.println("The amount of rainfall for " + days + " days = " + sumRainfall);
-        float average = (float)sumRainfall / days;
+        double average = (double)sumRainfall / days;
         System.out.println("Average rainfall for " + days + " days = " + average);
         System.out.println("Maximum daily rainfall" + days + " days = " + largest);
 
