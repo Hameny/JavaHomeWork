@@ -12,6 +12,7 @@ public class Lesson6HW {
 
         Rectangle rectangle = new Rectangle(pointOne, pointTwo);
         System.out.println("Area = " + rectangle.getArea());
+        System.out.println("Perimetr = " + rectangle.getPerimetr());
         System.out.printf("Length diagonal = %.2f\n", rectangle.getDiagonal());
     }
 
