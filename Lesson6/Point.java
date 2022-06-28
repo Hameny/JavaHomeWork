@@ -2,8 +2,8 @@ package tms.java.lesson6OOP;
 
 public class Point {
 
-    public int coordinateX;
-    public int coordinateY;
+    private int coordinateX;
+    private int coordinateY;
 
     public Point(int coordinateX, int coordinateY) {
         this.coordinateX = coordinateX;
