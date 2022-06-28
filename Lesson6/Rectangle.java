@@ -1,8 +1,8 @@
 package tms.java.lesson6OOP;
 
 public class Rectangle {
-    public Point upperLeftCorner;
-    public Point bottomRightCorner;
+    private Point upperLeftCorner;
+    private Point bottomRightCorner;
 
     public Rectangle(Point upperLeftCorner, Point bottomRightCorner) {
         this.upperLeftCorner = upperLeftCorner;
@@ -13,6 +13,12 @@ public class Rectangle {
         int dx = upperLeftCorner.coordinateX - bottomRightCorner.coordinateX;
         int dy = bottomRightCorner.coordinateY - upperLeftCorner.coordinateY;
         return (dx * dy);
+    }
+    
+    public double getPerimetr() {
+        int dx = upperLeftCorner.coordinateX - bottomRightCorner.coordinateX;
+        int dy = bottomRightCorner.coordinateY - upperLeftCorner.coordinateY;
+        return 2*(dx + dy);
     }
 
     public double getDiagonal() {
