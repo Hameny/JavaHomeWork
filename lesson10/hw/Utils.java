@@ -4,7 +4,7 @@ import java.util.Locale;
 
 public final class Utils {
 
-    public Utils() {
+    private Utils() {
     }
 
     public static boolean examinationPalindrome(String inputText) {
@@ -14,7 +14,7 @@ public final class Utils {
         return reverseInputText.toLowerCase().equals(newInputText.toLowerCase());
     }
 
-    public static String isPolindrome(String inputText) {
+    public static String Polindrome(String inputText) {
         if (examinationPalindrome(inputText)) {
             StringBuilder palindrome = new StringBuilder();
             palindrome.append("Text: ").append(inputText).append(", is a palindrome");
@@ -29,7 +29,7 @@ public final class Utils {
     public static int translateRomanToArabic(String romanNumber) {
         int arabicNumber = 0;
         char[] charOfRoman = {'I', 'V', 'X', 'L', 'C', 'D', 'M'};
-        int[] CharValueOfRoman = {1, 5, 10, 50, 100, 500, 1000};
+        int[] charValueOfRoman = {1, 5, 10, 50, 100, 500, 1000};
         for (int i = 0; i < romanNumber.length(); i++) {
             checkChar:
             {
